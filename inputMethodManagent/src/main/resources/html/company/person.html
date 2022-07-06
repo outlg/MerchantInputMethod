@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+</head>
+<body style="background-color:#EFF0F4;">
+<div>
+    <img src="img.png" ;width="50px" ; height="50px" ; style="position:absolute; left:60px; top:43px; ">
+</div>
+
+<!..顶部白色色块..>
+<div style="background-color: rgba(253, 253, 253, 100); width:1260px; height:50px;position:absolute; left:213px; top:43px;">
+    <img src="img_1.png" ;width="30px" ; height="30px" ; style="position:absolute; left:1220px; top:10px; ">
+    <p style="width: 200px;height: 20px;color: rgba(56, 58, 64, 100);font-size: 15px;position:absolute; left:50px; top:0px; ">首页 / 个人中心 </p>
+
+    <!..退出登录超链接..>
+    <a href="Login.html"
+       style="text-decoration: none;width:60px;height: 50px;line-height: 20px;color: blue;font-size: 15px;position:absolute; left:1155px;top:15px;" >退出登录</a>
+</div>
+
+<!..左边黑色色块..>
+<div style="background-color:#2D3A4B; width:153px; height:630px;position:absolute; left:60px; top:93px;">
+    <summary style="color:white;left:10px; top:10px;padding-left:55px;padding-top:25px;" ><a  style="font-size: 15px;color: white;text-decoration: none;" href="system1.html">公司</a></summary>
+    <summary style="color:white;left:10px; top:10px;padding-left:40px;padding-top:25px;" ><a id="l4" style="font-size: 15px;color: white;text-decoration: none;" href="#">个人中心</a></summary>
+</div>
+
+
+
+<!..中间色块..>
+<div style="background-color:white; width:600px; height:590px;position:absolute; left:240px; top:110px;">
+    <img src="person.jpg"   style="width:200px;height:150px;margin-left: 215px; margin-top: 20px;">
+    <p style="width:300px;font-size: 22px;margin-left: 250px;margin-top: 10px;">系统管理员</p>
+    <button style="margin-left:230px;margin-top:280px;width:150px;height:40px;border: none;background-color: rgba(240, 76, 76, 100);color: rgba(255, 255, 255, 100);font-size: 18px;text-align: center;">修改密码</button>
+    <div style="width: 230px;border: 1px solid rgba(187, 187, 187, 100);position: absolute;left: 10px;top:320px"></div>
+    <p style="color: rgba(136, 136, 136, 100);font-size: 20px;text-align: left;font-family: SourceHanSansSC-regular;position: absolute;left:265px;top:286px">信息绑定</p>
+    <div style="width: 225px;border: 1px solid rgba(187, 187, 187, 100);position: absolute;left: 365px;top:320px"></div>
+    <p id="p1" style="color: rgba(136, 136, 136, 100);font-size: 20px;text-align: center;font-family: SourceHanSansSC-regular;position: absolute;left:200px;top:350px">邮箱地址:</p>
+    <div style="width: 598px;border: 1px solid rgba(187, 187, 187, 100);position: absolute;left: 0px;top:440px"></div>
+</div>
+<div style="background-color:white; width:620px; height:590px;position:absolute; left:850px; top:110px;">
+    <p style="width:300px;font-size: 22px;margin-left: 270px;margin-top: 60px;">基础信息</p>
+    <p style="width:300px;font-size: 18px;margin-left: 210px;margin-top: 60px;">用</p>
+    <p style="width:300px;font-size: 18px;margin-left: 238pX;margin-top: -42px;">户</p>
+    <p id="p2" style="width:300px;font-size: 18px;margin-left: 263px;margin-top: -42px;">名：</p>
+    <p  style="width:300px;font-size: 18px;margin-left: 210px;margin-top: 60px;">性</p>
+    <p id="p3" style="width:300px;font-size: 18px;margin-left: 263px;margin-top: -42px;">别：</p>
+    <p id="p4" style="width:300px;font-size: 18px;margin-left: 210px;margin-top: 60px;">公司名称：不属于任何公司</p>
+    <p style="width:300px;font-size: 18px;margin-left: 210px;margin-top: 60px;">系统职务：系统管理员</p>
+    <button style="margin-left:250px;margin-top:70px;width:150px;height:40px;border: none;background-color: rgba(240, 76, 76, 100);color: rgba(255, 255, 255, 100);font-size: 18px;text-align: center;" onclick="changep()">修改信息</button>
+</div>
+
+<!..添加页面..>
+<div id="changeperson" style="display: none">
+    <div style="opacity:0.6;background-color: rgba(239, 240, 244, 100);color: rgba(16, 16, 16, 100);width:1260px; height:600px;position:absolute; left:213px; top:100px;">
+    </div>
+
+    <div style="height:380px;width:500px;background-color: rgba(255, 255, 255, 100);color: rgba(16, 16, 16, 100);font-size: 14px;position:absolute; left:550px; top:200px;">
+        <p style="color: rgba(16, 16, 16, 100);font-size: 22px;margin-left:220px;margin-top:5px; ">修改信息</p>
+        <p style="width:300px;font-size: 18px;margin-left: 150px;margin-top: 40px;">用</p>
+        <p style="width:300px;font-size: 18px;margin-left: 178pX;margin-top: -42px;">户</p>
+        <p style="width:300px;font-size: 18px;margin-left: 203px;margin-top: -42px;">名：</p>
+        <p style="width:300px;font-size: 18px;margin-left: 150px;margin-top: 60px;">性</p>
+        <p style="width:300px;font-size: 18px;margin-left: 203px;margin-top: -42px;">别：</p>
+        <p style="width:300px;font-size: 18px;margin-left: 150px;margin-top: 60px;">公司名称：</p>
+        <button   style="margin-left:180px;margin-top:30px;width: 60px;height: 30px;border-radius: 4px;color: white;background-color:#3C6AEC ;font-size: 18px;border: 1px solid rgba(187, 187, 187, 100);" onclick="changps()" >修改</button>
+        <button   style="margin-left:50px;margin-top:30px;width: 60px;height: 30px;border-radius: 4px;color: black;background-color:white;font-size: 18px;border: 1px solid rgba(187, 187, 187, 100);" onclick="changeclose()">取消</button>
+        <input type="text" placeholder="输入新的用户名" id="text1" style="position:absolute; left:240px; top:70px;width: 200px;height: 30px;color: rgba(136, 136, 136, 100);font-size: 18px;text-align: left;"/>
+        <p  id="text3" style="position:absolute; left:240px; top:223px;width: 200px;height: 30px;color: rgba(136, 136, 136, 100);font-size: 18px;text-align: left;">不属于任何公司</p>
+        <input type="radio" name="sex" id="atext5" value="男" style="position:absolute; left:235px; top:163px;"/><label style="position:absolute; left:260px; top:160px;font-size: 18px;">男</label>
+        <input type="radio" name="sex" id="atext6" value="女"  style="position:absolute; left:310px; top:163px;"/> <label style="position:absolute; left:335px; top:160px;font-size: 18px;">女</label>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script type="text/javascript"></script>
+<script>
+    document.getElementById("l4").style.color="#409EFF";
+    document.getElementById("p2").innerHTML="名："+"sunder";
+    document.getElementById("p3").innerHTML="别："+"男";
+    var useremail=getCookie("user_email");
+    document.getElementById("p1").innerHTML="邮箱地址:"+useremail;
+
+    // var data={"u_email":useremail};
+    // var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
+    // httpRequest.open("POST", "http://localhost:8088/user/showUserinfo",true);  //调用AddDataToServer
+    // httpRequest.setRequestHeader("Content-type", "application/JSON"); //设置请求头信
+    // httpRequest.send(JSON.stringify(data)); //设置为发送给服务器数据
+    // //回调函数，获取返回数据
+    // httpRequest.onreadystatechange = function() {
+    //     if (httpRequest.readyState == 4) {
+    //         //根据服务器的响应内容格式处理响应结果
+    //         if(httpRequest.getResponseHeader('content-type')==='application/json'){
+    //             var result = JSON.parse(httpRequest.responseText);
+    //             if(result[0]){
+    //                 alert("修改成功");
+    //                 document.getElementById("changeperson").style.display="none";
+    //             }
+    //
+    //         }
+    //     }
+    // }
+
+    document.getElementById("p4").innerHTML="公司名称："+"不属于任何公司";
+    function changep(){
+        document.getElementById("changeperson").style.display="block";
+    }
+    function changeclose() {
+        document.getElementById("text1").value="";
+        document.getElementById("text3").value="";
+        document.getElementById("atext5").checked=false;
+        document.getElementById("atext6").checked=false;
+        document.getElementById("changeperson").style.display="none";
+    }
+
+    function changps(){
+        var sex;
+        if(document.getElementById("atext5").checked){
+            sex="男";
+        }
+        else{
+            sex="女";
+        }
+        var uname=document.getElementById("text1").value;
+        //document.getElementById("p4").innerHTML="公司名称："+document.getElementById("text3").value;
+        document.getElementById("p2").innerHTML="名："+uname;
+        document.getElementById("p3").innerHTML="别："+sex;
+        document.getElementById("changeperson").style.display="none";
+
+        // var data={"u_email":useremail,"u_identity":3,"u_name":uname,"u_gender":sex,"u_age":21,"c_no":7};
+        // var httpRequest = new XMLHttpRequest();//第一步：建立所需的对象
+        // httpRequest.open("POST", "http://localhost:8088/user/changeUserinfo",true);  //调用AddDataToServer
+        // httpRequest.setRequestHeader("Content-type", "application/JSON"); //设置请求头信
+        // httpRequest.send(JSON.stringify(data)); //设置为发送给服务器数据
+        // //回调函数，获取返回数据
+        // httpRequest.onreadystatechange = function() {
+        //     if (httpRequest.readyState == 4) {
+        //         //根据服务器的响应内容格式处理响应结果
+        //         if(httpRequest.getResponseHeader('content-type')==='application/json'){
+        //             var result = JSON.parse(httpRequest.responseText);
+        //             if(result["code"]== 5001){
+        //                 alert("修改成功");
+        //                 document.getElementById("changeperson").style.display="none";
+        //             }
+        //             else{
+        //                 alert("添加失败");
+        //             }
+        //         }
+        //     }
+        // }
+
+    }
+    function getCookie(cookie_name) {
+        var allcookies = document.cookie;
+
+        var cookie_pos = allcookies.indexOf(cookie_name);
+
+        if (cookie_pos !== -1) {
+            cookie_pos = cookie_pos + cookie_name.length + 1;
+            var cookie_end = allcookies.indexOf(";", cookie_pos);
+            if (cookie_end === -1) {
+                cookie_end = allcookies.length;
+            }
+            var value = unescape(allcookies.substring(cookie_pos, cookie_end));
+        }
+        return value;
+    }
+</script>
+</html>
