@@ -1,7 +1,7 @@
 # 商家输入法
 - 大三软工实训项目
-- 一个为商家输入法客户端\一个为后台管理系统
-- 项目在别人的Wi-inputMethod项目`https://github.com/WiInputMethod/VE`上添加功能，做的很菜，且整个项目的结构较混乱，仅供参考和纪念
+- 一个为商家输入法App客户端\一个为后台管理系统Web端
+- 项目的App客户端在别人的Wi-inputMethod项目`https://github.com/WiInputMethod/VE`上添加功能，做的很菜，且整个项目的结构较混乱，仅供参考和纪念
 
 若要使用该客户端，首先需要运行后台管理系统。
 
