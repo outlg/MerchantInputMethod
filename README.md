@@ -13,7 +13,7 @@ https://user-images.githubusercontent.com/93128417/198303809-1dfa1427-a5d3-471d-
 
 - 后台管理系统功能如下视频
 
-https://user-images.githubusercontent.com/93128417/198303133-71ade59e-0940-46ec-b8be-1b5bfe49f8fa.mp4
+https://user-images.githubusercontent.com/93128417/198307202-359a570f-d77f-4670-99c6-e799deb8f3cf.mp4
 
 客户端只能在arm模拟器上运行，效果图如下：
 
